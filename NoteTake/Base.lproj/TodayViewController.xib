@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="NoteTake" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="yZD-oE-F1g" id="dGE-6s-7ql"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView simulatedAppContext="notificationCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="227"/>
+            <subviews>
+                <scrollView appearanceType="aqua" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0f-je-Xd8">
+                    <rect key="frame" x="0.0" y="30" width="320" height="197"/>
+                    <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="ZVG-e8-ns4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="197"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView verticallyResizable="YES" usesFontPanel="YES" usesInspectorBar="YES" findStyle="bar" allowsDocumentBackgroundColorChange="YES" usesRuler="YES" spellingCorrection="YES" smartInsertDelete="YES" id="yZD-oE-F1g">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="197"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="minSize" width="320" height="197"/>
+                                <size key="maxSize" width="320" height="10000000"/>
+                                <color key="insertionPointColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textView>
+                        </subviews>
+                    </clipView>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="197" id="qu6-wm-jfc"/>
+                    </constraints>
+                    <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="fz1-pI-R7E">
+                        <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="Nb1-ir-aQG">
+                        <rect key="frame" x="304" y="0.0" width="16" height="197"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="g0f-je-Xd8" secondAttribute="trailing" id="QaA-Ie-4wV"/>
+                <constraint firstAttribute="bottom" secondItem="g0f-je-Xd8" secondAttribute="bottom" constant="30" id="U4Y-cd-tLE"/>
+                <constraint firstItem="g0f-je-Xd8" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="aXl-ae-Wi4"/>
+                <constraint firstItem="g0f-je-Xd8" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="cXg-ma-EeQ"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="182"/>
+        </customView>
+    </objects>
+</document>

@@ -11,7 +11,36 @@
 		8B0FF99E24FFBCF300993BC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FF99D24FFBCF300993BC4 /* ViewController.swift */; };
 		8B0FF9A024FFBCF500993BC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0FF99F24FFBCF500993BC4 /* Assets.xcassets */; };
 		8B0FF9A324FFBCF500993BC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0FF9A124FFBCF500993BC4 /* Main.storyboard */; };
+		8B0FF9B224FFBE2800993BC4 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0FF9B124FFBE2800993BC4 /* NotificationCenter.framework */; };
+		8B0FF9B524FFBE2800993BC4 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FF9B424FFBE2800993BC4 /* TodayViewController.swift */; };
+		8B0FF9B824FFBE2800993BC4 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B0FF9B624FFBE2800993BC4 /* TodayViewController.xib */; };
+		8B0FF9BC24FFBE2800993BC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B0FF9BA24FFBE2800993BC4 /* InfoPlist.strings */; };
+		8B0FF9C024FFBE2800993BC4 /* NoteTake.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B0FF9AF24FFBE2800993BC4 /* NoteTake.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B0FF9BE24FFBE2800993BC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B0FF99024FFBCF300993BC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B0FF9AE24FFBE2800993BC4;
+			remoteInfo = NoteTake;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B0FF9C424FFBE2800993BC4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8B0FF9C024FFBE2800993BC4 /* NoteTake.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8B0FF99824FFBCF300993BC4 /* Musa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +50,13 @@
 		8B0FF9A224FFBCF500993BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B0FF9A424FFBCF500993BC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B0FF9A524FFBCF500993BC4 /* Musa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Musa.entitlements; sourceTree = "<group>"; };
+		8B0FF9AF24FFBE2800993BC4 /* NoteTake.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NoteTake.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0FF9B124FFBE2800993BC4 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		8B0FF9B424FFBE2800993BC4 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		8B0FF9B724FFBE2800993BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		8B0FF9B924FFBE2800993BC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B0FF9BB24FFBE2800993BC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8B0FF9BD24FFBE2800993BC4 /* NoteTake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NoteTake.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +67,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B0FF9AC24FFBE2800993BC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0FF9B224FFBE2800993BC4 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				8B0FF99A24FFBCF300993BC4 /* Musa */,
+				8B0FF9B324FFBE2800993BC4 /* NoteTake */,
+				8B0FF9B024FFBE2800993BC4 /* Frameworks */,
 				8B0FF99924FFBCF300993BC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				8B0FF99824FFBCF300993BC4 /* Musa.app */,
+				8B0FF9AF24FFBE2800993BC4 /* NoteTake.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +110,26 @@
 			path = Musa;
 			sourceTree = "<group>";
 		};
+		8B0FF9B024FFBE2800993BC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B0FF9B124FFBE2800993BC4 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B0FF9B324FFBE2800993BC4 /* NoteTake */ = {
+			isa = PBXGroup;
+			children = (
+				8B0FF9B424FFBE2800993BC4 /* TodayViewController.swift */,
+				8B0FF9B624FFBE2800993BC4 /* TodayViewController.xib */,
+				8B0FF9B924FFBE2800993BC4 /* Info.plist */,
+				8B0FF9BA24FFBE2800993BC4 /* InfoPlist.strings */,
+				8B0FF9BD24FFBE2800993BC4 /* NoteTake.entitlements */,
+			);
+			path = NoteTake;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,15 +140,34 @@
 				8B0FF99424FFBCF300993BC4 /* Sources */,
 				8B0FF99524FFBCF300993BC4 /* Frameworks */,
 				8B0FF99624FFBCF300993BC4 /* Resources */,
+				8B0FF9C424FFBE2800993BC4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8B0FF9BF24FFBE2800993BC4 /* PBXTargetDependency */,
 			);
 			name = Musa;
 			productName = Musa;
 			productReference = 8B0FF99824FFBCF300993BC4 /* Musa.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8B0FF9AE24FFBE2800993BC4 /* NoteTake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B0FF9C124FFBE2800993BC4 /* Build configuration list for PBXNativeTarget "NoteTake" */;
+			buildPhases = (
+				8B0FF9AB24FFBE2800993BC4 /* Sources */,
+				8B0FF9AC24FFBE2800993BC4 /* Frameworks */,
+				8B0FF9AD24FFBE2800993BC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoteTake;
+			productName = NoteTake;
+			productReference = 8B0FF9AF24FFBE2800993BC4 /* NoteTake.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +180,9 @@
 				ORGANIZATIONNAME = "Can Kalender";
 				TargetAttributes = {
 					8B0FF99724FFBCF300993BC4 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					8B0FF9AE24FFBE2800993BC4 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -112,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				8B0FF99724FFBCF300993BC4 /* Musa */,
+				8B0FF9AE24FFBE2800993BC4 /* NoteTake */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +213,15 @@
 			files = (
 				8B0FF9A024FFBCF500993BC4 /* Assets.xcassets in Resources */,
 				8B0FF9A324FFBCF500993BC4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0FF9AD24FFBE2800993BC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0FF9B824FFBE2800993BC4 /* TodayViewController.xib in Resources */,
+				8B0FF9BC24FFBE2800993BC4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +237,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B0FF9AB24FFBE2800993BC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0FF9B524FFBE2800993BC4 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B0FF9BF24FFBE2800993BC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B0FF9AE24FFBE2800993BC4 /* NoteTake */;
+			targetProxy = 8B0FF9BE24FFBE2800993BC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8B0FF9A124FFBCF500993BC4 /* Main.storyboard */ = {
@@ -147,6 +262,22 @@
 				8B0FF9A224FFBCF500993BC4 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B0FF9B624FFBE2800993BC4 /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B0FF9B724FFBE2800993BC4 /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		8B0FF9BA24FFBE2800993BC4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B0FF9BB24FFBE2800993BC4 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -268,6 +399,7 @@
 		8B0FF9A924FFBCF500993BC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Musa/Musa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +420,7 @@
 		8B0FF9AA24FFBCF500993BC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Musa/Musa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +434,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kalender.Musa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8B0FF9C224FFBE2800993BC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NoteTake/NoteTake.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9WS5872K3Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = NoteTake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kalender.Musa.NoteTake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8B0FF9C324FFBE2800993BC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NoteTake/NoteTake.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9WS5872K3Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = NoteTake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kalender.Musa.NoteTake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -322,6 +497,15 @@
 			buildConfigurations = (
 				8B0FF9A924FFBCF500993BC4 /* Debug */,
 				8B0FF9AA24FFBCF500993BC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B0FF9C124FFBE2800993BC4 /* Build configuration list for PBXNativeTarget "NoteTake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B0FF9C224FFBE2800993BC4 /* Debug */,
+				8B0FF9C324FFBE2800993BC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
